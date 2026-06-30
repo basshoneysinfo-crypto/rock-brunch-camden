@@ -59,6 +59,23 @@ h2 { margin: 0; font: clamp(2.8rem, 6vw, 6.5rem)/.92 "Archivo Black", sans-serif
 
 .partners { background: white; }
 .text-link-dark { display: inline-block; margin-top: 1.5rem; }
+.signup-section { background: var(--orange); border-top: 2px solid var(--ink); }
+.signup-intro { display: grid; grid-template-columns: .4fr 1fr; gap: 3rem; align-items: end; }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 4rem; }
+.signup-card { background: var(--paper); border: 2px solid var(--ink); padding: clamp(1.5rem, 4vw, 3rem); box-shadow: 8px 8px 0 var(--ink); scroll-margin-top: 1rem; }
+.partner-card { background: var(--acid); }
+.form-label { margin: 0 0 2rem; font-size: .73rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.signup-card h3 { margin: 0; font: clamp(2rem, 4vw, 3.6rem)/.95 "Archivo Black"; letter-spacing: -.055em; text-transform: uppercase; }
+.signup-card > p:not(.form-label) { min-height: 3.5rem; line-height: 1.5; }
+.signup-card form { display: grid; gap: .8rem; margin-top: 2rem; }
+.signup-card form > label:not(.consent) { font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.signup-card input[type="email"] { width: 100%; min-height: 3.5rem; border: 2px solid var(--ink); border-radius: 0; background: white; color: var(--ink); font: 1rem "DM Sans", sans-serif; padding: .8rem 1rem; }
+.signup-card input[type="email"]:focus { outline: 3px solid white; outline-offset: 2px; }
+.consent { display: flex; align-items: flex-start; gap: .65rem; margin: .4rem 0 .8rem; font-size: .78rem; line-height: 1.45; }
+.consent input { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; margin-top: .08rem; accent-color: var(--ink); }
+.signup-card .button { border-radius: 0; cursor: pointer; font-family: inherit; }
+.honeypot { position: absolute; left: -5000px; }
+.privacy-note { margin: 2rem 0 0; font-size: .75rem; }
 .final-cta { text-align: center; background: var(--ink); color: white; }
 .final-cta h2 { max-width: 900px; margin: 1rem auto; }
 .final-cta p:not(.eyebrow) { font-size: 1.15rem; margin-bottom: 2rem; }
@@ -73,7 +90,8 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.4rem; }
   .hero-stamp { width: 7.5rem; right: 1.2rem; bottom: 5rem; }
   .section { padding-inline: 1.2rem; }
-  .manifesto-grid, .partners-grid, .artist-call { grid-template-columns: 1fr; }
+  .manifesto-grid, .partners-grid, .artist-call, .signup-intro, .form-grid { grid-template-columns: 1fr; }
+  .signup-card > p:not(.form-label) { min-height: 0; }
   .feature-grid { grid-template-columns: 1fr; margin-top: 3rem; }
   .feature-grid article { min-height: 0; border-right: 0; border-bottom: 2px solid var(--ink); }
   .feature-grid h3 { margin-top: 2rem; }
