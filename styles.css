@@ -52,8 +52,10 @@ h2 { margin: 0; font: clamp(2.8rem, 6vw, 6.5rem)/.92 "Archivo Black", sans-serif
 .feature-grid span { font-weight: 800; }
 .feature-grid h3 { margin: 4rem 0 .75rem; font: 2.4rem "Archivo Black"; text-transform: uppercase; }
 .feature-grid p { line-height: 1.55; }
-.visual-break { margin: 2rem 0 0; height: clamp(18rem, 42vw, 36rem); overflow: hidden; border: 2px solid var(--ink); }
-.visual-break img { width: 100%; height: 100%; object-fit: cover; }
+.visual-break { position: relative; margin: 2rem 0 0; height: clamp(18rem, 42vw, 36rem); overflow: hidden; border: 2px solid var(--ink); }
+.visual-break > img:first-child { width: 100%; height: 100%; object-fit: cover; }
+.visual-break::after { content: ""; position: absolute; inset: auto auto 0 0; width: min(52rem, 65%); height: 12rem; background: linear-gradient(90deg, #03040c 0 76%, transparent 100%); }
+.visual-break .visual-break-logo { position: absolute; z-index: 1; left: clamp(1.5rem, 6vw, 7rem); bottom: 2rem; width: clamp(12rem, 22vw, 20rem); height: auto; }
 
 .artist-call { display: grid; grid-template-columns: 1.05fr .95fr; padding: 0; background: var(--acid); border-block: 2px solid var(--ink); }
 .artist-panel { padding: clamp(4rem, 8vw, 8rem) 6vw; }
@@ -107,6 +109,8 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   .feature-grid { grid-template-columns: 1fr; margin-top: 3rem; }
   .feature-grid article { min-height: 0; border-right: 0; border-bottom: 2px solid var(--ink); }
   .feature-grid h3 { margin-top: 2rem; }
+  .visual-break::after { width: 78%; height: 9rem; }
+  .visual-break .visual-break-logo { bottom: 1.4rem; width: min(15rem, 58vw); }
   .artist-type { min-height: 20rem; border-left: 0; border-top: 2px solid var(--ink); }
   footer { flex-direction: column; }
 }
