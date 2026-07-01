@@ -120,7 +120,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 .thanks-page { min-height: 100svh; background: var(--ink); color: white; }
 .thanks-header { position: absolute; z-index: 5; inset: 0 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 3vw; text-transform: uppercase; font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
 .thanks-main { min-height: calc(100svh - 3.5rem); position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: stretch; }
-.thanks-image { min-height: 100%; background: linear-gradient(90deg, transparent 50%, var(--ink) 100%), url("assets/crowd.webp") center/cover no-repeat; filter: contrast(1.08) saturate(.82); }
+.thanks-image { min-height: 100%; background: linear-gradient(90deg, transparent 50%, var(--ink) 100%), url("assets/jukebox.webp") center/cover no-repeat; filter: contrast(1.08) saturate(.82); }
 .thanks-copy { align-self: center; position: relative; z-index: 2; padding: 8rem 7vw 6rem 2vw; }
 .thanks-copy h1 { margin: .8rem 0 1.8rem; font-size: clamp(3.5rem, 6.15vw, 7.5rem); line-height: .78; }
 .thanks-copy h1 span { color: var(--acid); -webkit-text-stroke: 0; transform: none; white-space: nowrap; }
@@ -135,7 +135,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   .thanks-header { padding: 1.2rem; }
   .thanks-header > span { display: none; }
   .thanks-main { grid-template-columns: 1fr; align-content: end; }
-  .thanks-image { position: absolute; inset: 0; min-height: 0; background: linear-gradient(0deg, var(--ink) 15%, rgba(5,5,5,.35) 70%, rgba(5,5,5,.55) 100%), url("assets/crowd.webp") center/cover no-repeat; opacity: .72; }
+  .thanks-image { position: absolute; inset: 0; min-height: 0; background: linear-gradient(0deg, var(--ink) 15%, rgba(5,5,5,.35) 70%, rgba(5,5,5,.55) 100%), url("assets/jukebox.webp") center/cover no-repeat; opacity: .72; }
   .thanks-copy { align-self: end; padding: 10rem 1.2rem 8rem; }
   .thanks-copy h1 { font-size: clamp(4rem, 19vw, 6.5rem); }
   .thanks-copy h1 span { white-space: normal; }
