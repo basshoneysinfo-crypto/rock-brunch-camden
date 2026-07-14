@@ -1,5 +1,5 @@
-# Rock Brunch Camden
+# UNSIGNED // LDN — Rock Qualifier
 
-Static launch page for WORKHAUS Rock Brunch Camden.
+Static event page for the WORKHAUS UNSIGNED // LDN Rock Qualifier.
 
-The page presents the event as coming soon and leaves the venue, ticket price and line-up unannounced until these facts are confirmed.
+The event takes place at Barfly Camden on 30 September 2026. Doors open at 7pm. Tickets are sold through DICE.
